@@ -29,3 +29,23 @@ a{
 ul{
     list-style: none;
 }
+
+header {
+    background: var(--fond-carte);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--accent);
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a{
+    color: var(--texte);
+}
