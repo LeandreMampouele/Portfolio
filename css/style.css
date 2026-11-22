@@ -1,0 +1,31 @@
+/* Portfolio_Léandre_Loth */
+:root{
+    --fond: #0f172a;
+    --fond-carte: #1e293b;
+    --texte: #e2e8f0;
+    --texte-secondaire: #94a3b8;
+    --accent: #22d3ee;
+    --accent-survol: #06b6d4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background: var(--fond);
+    color: var(--texte);
+    line-height: 1.6;
+}
+
+a{
+    color: var(--accent);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
