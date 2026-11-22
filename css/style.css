@@ -48,6 +48,11 @@ nav ul {
 
 nav a{
     color: var(--texte);
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--accent);
 }
 
 /* Bouton et contenu principal */
@@ -93,6 +98,12 @@ h1 {
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+btn:hover {
+    background: var(--accent-survol);
+    transform: scale(1.05);
 }
 
 /* Titres_images_compétences_cartes_grilles */
@@ -134,6 +145,12 @@ progress {
     background: var(--fond-carte);
     padding: 1.5rem;
     border-radius: 12px;
+    transition:all 0.3s ease;
+}
+
+.carte:hover, .projet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(34, 211, 238, 0.3);
 }
 
 /* Mail et footer */
@@ -187,4 +204,54 @@ footer {
 
 .infos li {
     margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .role {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 0.75rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+}
+
+/* Animation d'apparition */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: apparition 0.8s ease forwards;
 }
